@@ -1,108 +1,199 @@
 body {
+    background-image: url(../images/wormz.png);
+    margin: 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    background-image: url(/Users/westonrose/Desktop/weston_rose_portfolio/assets/images/wormz.png);
-
   }
   
   header {
-    background-color: #4aaaa5;
+    border-bottom: solid 2px #cccccc;
+    margin: auto;
+    background-color: white;
   }
 
-  h1 {
-      font-family: 'Georgia', Times, 'Times New Roman', serif;
-      color: #ffffff;
-      background-color: #4aaaa5;
-      margin: 2px;
-      padding: 10px;
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      font-size: 20px;
-
-      float: 0;
-
-      right: 50px;
-      width: 150px;
-      height: 40px;
-      border: 3px solid white;
-  }
-
-  h2 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
-    border-bottom-style: solid;
-    border-width: 2px;
-    border-color: #777777;
-    }
-    
   h6 {
-        font-family: 'Georgia', Times, 'Times New Roman', serif;
-        color: #777777
-    }
-    
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #ffffff;  
+    background: #4aaaa5;
+    width: 324px;
+    height: 50px;
+    padding: 20px 0 0 0;
+    text-align: center;
+    position: absolute;
+  }
+
   a {
-      color: #777777;
-      float: right;
+      text-decoration: none;
+      color: #4aaaa5;
   }
 
-  #section1: {
-      
-  }  
-
-  #profile_image {
-      float: left;
-      padding: 10px;
-  }
-
-  #links {
-      float: right;
-  }
-
-  #portfolio_image {
-      float: left;
-  }
-
-  .clearfix: : after {
-      content: " ";
-      display: block;
-      clear: both;
-  }
-
-  #main {
-      background-color: #ffffff;
-      border-block-color: #dddddd;
-      width: 960px;
-
-  }
-  
-  #portfoliosection {
-      background-color: #4aaaa5
-  }
-
-  #text {
-      padding: 10;
-      line-height: 150%
-  }
-  
-  .button {
-      background-color: #4aaaa5;
-  }
-
-  p {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      color: #777777;
-  }
-
-  label {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      color: #777777;
+  main {
+      padding: 10% 0 0 0;
   }
 
   footer {
-      background-color: #666666;
-      color: #ffffff;
       border-top: 8px solid #4aaaa5;
+      height: 50px;
+      background: #666666;
       text-align: center;
+      color: #c6ccc6;
+      font-size: 10px;
+      position: absolute;
+      bottom: 0;
   }
+
+  .content {
+      /*This is what makes my footer sticky*/
+      min-height: calc(100vh - 70px);
+      margin-bottom: 20px;
+  }
+
+  .headerCont {
+      height: 70px;
+      width: 960px;
+      margin: 0 auto;
+      text-align: center;
+
+  }
+
+  .nameTab {
+      color: #ffffff;
+      float: left;
+      width: 25%;
+      letter-spacing: 0.025em;
+      height: 70px;
+      text-align: center;
+      background-color: #4aaaa5;
+      font-family: 'Georgia', Times, 'Times New Roman', serif;
+  }
+
+  div.h2 {
+      padding-top: 18px;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Georgia', Times, 'Times New Roman', serif;
+  }
+
+  .links {
+      float: right;
+      width: 25%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+  }
+  .linkTab {
+      width: 33.33%;
+      text-align: right;
+      /* justify-self: center;*/
+  }
+
+  .sideTab {
+      border-right-color: solid 1px #666666;
+  }
+
+  .mainCont {
+      width: 900px;
+      height: 100%;
+      padding: 10px 30px 40px 30px;
+      /*text-align: center;*/
+      background-color: white;
+      border: #eee solid 1px;
+      margin: 40px auto;
+      line-height: 150%;
+  }
+
+  .float {
+      float: left;
+  }
+
+  .cr {
+      position: absolute;
+      bottom: 5px;
+      left: 48%;
+  }
+
+  #bioPic {
+      float: left;
+      width: 209px;
+      height: 314px;
+      margin-right: 10px;
+  }
+
+  .mainh2 {
+      font-weight: bold;
+      color: #4aaaa5;
+      font-size: 30px;
+      font-family: 'Georgia', Times, 'Times New Roman', serif;
+      text-align: left;
+      display: block;
+      padding-bottom: 30px;
+      border-bottom: #dddddd solid 2px;
+  }
+
+  .clearfix: :after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  .button {
+      background: #4aaaa5;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  }
+
+  .portfolio_image1 {
+      float: left;
+  }
+
+  .portfoliosection1 {
+      margin: 0px 0px 100px 0;
+  }
+
+  .layer1:nth-child(even) {
+      margin-right: 40px;
+  }
+/*
+  .layer1 {
+      width: 200px;
+      position: relative;
+      top: 20px;
+      left: 20px;
+  }
+
+  p span {
+      background: #4aaaa5;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      bottom: 40;
+      padding: 10px;
+      left: 0;
+      position: absolute;
+  }*?
+  /*
+  .layer2 {
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    float: right; 
+  }
+
+  p span {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    width: 180px;
+    bottom: 20;
+    padding: 10px;
+    left: 0;
+    float: right;
+}*/
   
