@@ -22,6 +22,15 @@ body {
     position: absolute;
   }
 
+  .vertical_line {
+    border-right: solid 1px #666666;
+    padding: 0px 15px 0px 0px;
+  }
+
+  .text {
+    line-height: 2;
+  }
+
   a {
       text-decoration: none;
       color: #4aaaa5;
@@ -34,12 +43,12 @@ body {
   footer {
       border-top: 8px solid #4aaaa5;
       height: 50px;
+      width: 100%;
       background: #666666;
       text-align: center;
       color: #c6ccc6;
       font-size: 10px;
-      position: absolute;
-      bottom: 0;
+      position: relative;
   }
 
   .content {
@@ -93,13 +102,11 @@ body {
 
   .mainCont {
       width: 900px;
-      height: 100%;
       padding: 10px 30px 40px 30px;
       /*text-align: center;*/
       background-color: white;
       border: #eee solid 1px;
       margin: 40px auto;
-      line-height: 150%;
   }
 
   .float {
@@ -116,7 +123,7 @@ body {
       float: left;
       width: 209px;
       height: 314px;
-      margin-right: 10px;
+      margin-right: 25px;
   }
 
   .mainh2 {
@@ -130,7 +137,7 @@ body {
       border-bottom: #dddddd solid 2px;
   }
 
-  .clearfix: :after {
+  .clearfix:after {
       content: "";
       clear: both;
       display: table;
@@ -149,6 +156,7 @@ body {
 
   .portfolio_image1 {
       float: left;
+      margin: 20px 20px 20px 5px;
   }
 
   .portfoliosection1 {
@@ -157,6 +165,19 @@ body {
 
   .layer1:nth-child(even) {
       margin-right: 40px;
+  }
+
+  .container {
+      position: relative;
+      margin: 20px;
+  }
+
+  .banner {
+      background: #4aaaa5;
+      height: 50px;
+      width: 324px;
+      position: absolute;
+      top: 40%;
   }
 /*
   .layer1 {
