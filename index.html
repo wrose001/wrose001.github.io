@@ -1,49 +1,117 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Weston Rose's Portfolio</title>
-
-    </head>
+<!doctype html>
+<html lang="en">
+        <head>
+                <!-- Required meta tags -->
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+            ​
+                <!-- Bootstrap CSS -->
+               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            ​   <link rel="stylesheet" href="assets/css/style.css">
+            
+                <style>
+                  .myclass {
+                    width: 100%;
+                  }
+            ​
+                  /* Greater than 980px, Desktop */
+                  @media screen and (min-width:980px) {
+                      .myclass {
+                          color: red;
+                      }
+            ​
+                      .nav-wrapper {
+                        justify-content: flex-end;
+                      }
+                  }
+            ​
+                  /* Greater than 641px and less than 979px, Tablet */
+                  @media (min-width:641px) and (max-width:979px) {
+                      .myclass {
+                          color: blue;
+                      }
+            ​
+                      .nav-wrapper {
+                        justify-content: center;
+                      }
+                  }
+            ​
+                  /* Less than 640px, Mobile */
+                  @media screen and (max-width:640px) {
+                    .myclass {
+                          color: yellow;
+                    }
+            ​
+                    .nav-wrapper {
+                        justify-content: center;
+                      }
+                  }
+                </style>
+            ​
+                <title>Weston Rose's Portfolio</title>
+              </head>
 
     <body>
 
-        <div class="content">
             <header>
-                <div class="headerCont">
-                    <div class="nameTab">
-                        <div class="h2">
-                            Weston Rose
-                        </div>
-                    </div>
-            
+                    <a id="h2" class="headerTag" href="index.html">
+                        Weston Rose
+                    </a>
                     <div class="links">
-                        <a class="linkTab vertical_line" href="about.html">About</a>
-                        <a class="linkTab vertical_line" href="portfolio.html">Portfolio</a>
-                        <a class="linkTab" href="contact.html">Contact</a>
+                    <ul class="nav nav-wrapper">
+                      <li class="nav-item vertical_line">
+                        <a class="nav-link active linkTab" href="index.html">About</a>
+                      </li>
+                      <li class="nav-item vertical_line">
+                        <a class="nav-link linkTab" href="portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link linkTab" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    </div>
+                </header>
+
+    <div class="container content">
+        <div class="row">
+            <div class="row">
+                <div class="row subtitle">
+                    <div class="col">
+                        <h2>About Me</h2>
                     </div>
                 </div>
-            </header>
-
-            <main class="mainCont">
-                <p class="mainh2">About Me</p>
-                <div class="clearfix">
-                    <img id="bioPic" src="assets/images/rose.jpg" alt="Weston" width="209" height="314">
-                    <p class="text">Hello! My name is Weston Rose, and I have been working in the field of higher education administration for almost a decade after earning my master's degree in English in 2010. After a few years of teaching Composition & Rhetoric to college freshmen and working part-time as an acadmic advisor, I began working as a Media & Communications Specialist in the Office of Graduate Studies at Sam Houston State University. In addition to editing a magazine about graduate student research, one of my responsibilities was to update my office's web section as a content publisher, using a content management system called WebCMS. I became very interested in learning to code at this point because while I could create, edit, and delete webpages, I found that using the WYSIWYG mode limited my abilities; I started researching HTML and making small changes to the source code.</p> 
-                    <br>
-                    <p class="text">In 2016, I moved to Austin and began working as a Program & Communications Coordinator for the Office of Academic Affairs at The University of Texas System Administration. Many of my responsibilities, including working as a content publisher, are similar to those of my previous position. I recently enrolled in the UT Austin Coding Boot Camp because I want to strengthen my skill set and increase my knowledge of how to write code, build websites and apps, and troubleshoot new and exciting challenges. One more thing: I completed a certificate in Visual Design through General Assembly in December 2019. In this program, I learned Gestalt Principles related to web design, color theory, typography, and how to layout websites and apps through Adobe XD, which could then be given to a web developer to code.</p>
+                <div class="row">
+                    <div class="col-4">
+                        <img class="bioPic" src="assets/images/rose.jpg" alt="Weston" width="209" height="314">
+                    </div>
+                    <div class="col paragraph1">
+                        <p>Hello! My name is Weston Rose, and I have been working in the field of higher education administration for almost a decade after earning my master's degree in English in 2010. After a few years of teaching Composition & Rhetoric to college freshmen and working part-time as an acadmic advisor, I began working as a Media & Communications Specialist in the Office of Graduate Studies at Sam Houston State University. In addition to editing a magazine about graduate student research, one of my responsibilities was to update my office's web section as a content publisher, using a content management system called WebCMS. I became very interested in learning to code at this point because while I could create, edit, and delete webpages, I found that using the WYSIWYG mode limited my abilities; I started researching HTML and making small changes to the source code.</p>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col paragraph2">
+                            <p>In 2016, I moved to Austin and began working as a Program & Communications Coordinator for the Office of Academic Affairs at The University of Texas System Administration. Many of my responsibilities, including working as a content publisher, are similar to those of my previous position. I recently enrolled in the UT Austin Coding Boot Camp because I want to strengthen my skill set and increase my knowledge of how to write code, build websites and apps, and troubleshoot new and exciting challenges. One more thing: I completed a certificate in Visual Design through General Assembly in December 2019. In this program, I learned Gestalt Principles related to web design, color theory, typography, and how to layout websites and apps through Adobe XD, which could then be given to a web developer to code.</p>
+                        </div>
+                    </div> -->
                 </div>
-            </main>
+            </div>
         </div>
+    </div>
 
-        <footer>
-            <p class="cr">Copyright ©</p>
-        </footer>
+    <div class="row">
+        <div class="col">
+            <footer class="stickyFooter">
+                <p class="cr">Copyright ©</p>
+            </footer>
+        </div>
+    </div>
 
-    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
 </html>
